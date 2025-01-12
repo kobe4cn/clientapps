@@ -32,6 +32,7 @@ fn App() -> Element {
 
 #[component]
 fn PageNotFound(router: Vec<String>) -> Element {
+    let router = router.join("/");
     rsx! {
 
             h1{"Page Not Found"}
