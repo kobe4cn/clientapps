@@ -1,8 +1,10 @@
 use chrono::{DateTime, Utc};
 use serde::{Deserialize, Serialize};
 mod api;
+mod ui;
 
 pub use api::*;
+pub use ui::*;
 
 #[derive(Clone, Debug, PartialEq, Serialize, Deserialize)]
 pub struct StoryItem {
